@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Oswald-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 1 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.33484
+margin_right = 1.33484
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 280.0
+margin_top = 80.0
+margin_right = 1000.0
+margin_bottom = 155.0
+custom_fonts/font = SubResource( 1 )
+text = "Space Shooter 2D
+
+By: Grayson Clark"
+align = 1
+
+[node name="Play" type="Button" parent="."]
+margin_left = 570.0
+margin_top = 350.0
+margin_right = 690.0
+margin_bottom = 415.0
+custom_fonts/font = SubResource( 2 )
+keep_pressed_outside = true
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions" type="Label" parent="."]
+margin_left = 25.2941
+margin_top = 167.032
+margin_right = 497.294
+margin_bottom = 637.032
+custom_fonts/font = SubResource( 3 )
+text = "How to play:
+
+- Arrow keys to move
+- Shift = \"Modifier\"
+- Spacebar = Fire weapon
+
+
+While \"modifier\" is held down:
+As long as you have more than 0 energy...
+- Your ship moves faster
+- Missiles have a slight homing effect.
+
+
+To replenish energy, stay close to the space station"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
