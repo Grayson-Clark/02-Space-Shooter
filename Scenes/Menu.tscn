@@ -64,7 +64,7 @@ text = "How to play:
 While \"modifier\" is held down:
 As long as you have more than 0 energy...
 - Your ship moves faster
-- Missiles have a slight homing effect.
+- Missiles will home in towards an asteroid
 
 
 To replenish energy, stay close to the space station"
