@@ -1,4 +1,4 @@
-extends Sprite
+extends Node2D
 
 onready var VP = get_viewport().get_visible_rect().size
 const VEL_MUL = 5.0

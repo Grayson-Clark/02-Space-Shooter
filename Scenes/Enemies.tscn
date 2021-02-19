@@ -5,10 +5,10 @@
 
 [node name="Enemies" type="Node2D"]
 scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 3 )
 
 [node name="EnemySprite" type="Sprite" parent="."]
 texture = ExtResource( 4 )
-script = ExtResource( 3 )
 
 [node name="EnemyArea2d" type="Area2D" parent="EnemySprite"]
 position = Vector2( 0.505493, -0.522812 )
@@ -17,4 +17,4 @@ collision_mask = 5
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="EnemySprite/EnemyArea2d"]
 build_mode = 1
 polygon = PoolVector2Array( 5.35605, -104.64, -74.019, -78.8114, -108.037, -32.1944, -102.997, 31.4317, -72.7591, 97.5775, -1.57352, 103.877, 65.8323, 83.7184, 102.37, 37.1013, 105.52, -27.1547, 60.7926, -86.371 )
-[connection signal="area_entered" from="EnemySprite/EnemyArea2d" to="EnemySprite" method="_on_EnemyArea2d_area_entered"]
+[connection signal="area_entered" from="EnemySprite/EnemyArea2d" to="." method="_on_EnemyArea2d_area_entered"]

@@ -12,6 +12,6 @@ Built using Godot 3.2.2
 ## References
 None
 ## Future Development
-- Possibly fixing homing missiles. At the moment, they don't behave like I would like, but I haven't been able to figure out why they act that way.
+None
 ## Created by
 Grayson Clark
